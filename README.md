@@ -1,3 +1,0 @@
-# peet-slackup-bot
-
-Hi

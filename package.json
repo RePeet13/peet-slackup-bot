@@ -1,0 +1,14 @@
+{
+  "name": "slackarchive",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@slack/client": "^3.5.4",
+    "bufferutil": "^1.2.1",
+    "meteor-node-stubs": "~0.2.0",
+    "moment-timezone": "^0.5.5",
+    "utf-8-validate": "^1.2.1"
+  }
+}

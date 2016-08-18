@@ -1,0 +1,37 @@
+<head>
+    <title>Slack Archive</title>
+</head>
+
+<body>
+    <h1>Peet Slack Archive</h1>
+    {{> allChannels}}
+</body>
+
+<template name="allChannels">
+    <!--<input class="email" type="submit" value="Email Summary Button">-->
+    <div style="display: none">
+    {{#each channels}}
+        <div>
+        <h2 class="channelname">Channel Name : {{channelName}}</h2>
+        {{> channel_messages}}
+        </div>
+    {{/each}}
+    </div>
+</template>
+
+<template name="channel_messages">
+    <div class="messages">
+        {{#each messages}}
+            {{>message}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="message">
+    <div class="message">
+        <div class="username">{{username}}</div>
+        <div class="time">{{timestamp}}</div>
+        <div class="msg">{{text}}</div>
+        <br>
+    </div>
+</template>
